@@ -8,4 +8,4 @@
 - 第三者提供：一切行いません。
 - Google APIサービスの利用：本アプリは Google API Services User Data Policy（Limited Use 要件を含む）を遵守します。
 
-お問い合わせ：your@email.com
+お問い合わせ：t.mori.officeone@gmail.com
