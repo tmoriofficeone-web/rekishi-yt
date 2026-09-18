@@ -25,6 +25,6 @@ Stored data is reviewed and purged as needed; access can be revoked at any time 
 本アプリは Cookie を使用しません。The App does not use cookies.
 
 ## お問い合わせ / Contact
-（自分のメールアドレス）
+t.mori.officeone@gmail.com
 
 最終更新：2026年9月17日
