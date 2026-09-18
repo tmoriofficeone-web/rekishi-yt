@@ -1,0 +1,41 @@
+# 「教科書に載らない歴史の裏側」 自動投稿パイプライン設定
+
+channel:
+  name: "歴史の裏側"
+  concept: "教科書に載らない世界史・日本史の裏側を、意外な事実→背景→現代とのつながり、の型で語る雑学解説チャンネル"
+  target_minutes: 10          # 台本の目標尺（8分超で中間広告が入る）
+  publish_hour_jst: 19        # 予約公開時刻（JST）
+  days_ahead: 1               # 何日後に公開するか（1=翌日）
+  tags_base: ["歴史", "雑学", "世界史", "日本史", "歴史の裏側", "解説"]
+
+claude:
+  model: "claude-sonnet-4-6"
+  max_tokens: 8000
+
+elevenlabs:
+  voice_id: "YOUR_VOICE_ID"   # 日本語ボイスを1種に固定
+  model_id: "eleven_multilingual_v2"
+  stability: 0.5
+  similarity_boost: 0.75
+
+video:
+  width: 1920
+  height: 1080
+  fps: 30
+  backgrounds_dir: "assets/backgrounds"   # 章ごとに順番に切り替える背景画像
+  font_path: "assets/fonts/NotoSansJP-Bold.ttf"
+  subtitle_fontsize: 52
+  bgm_path: ""                # 任意。空ならBGMなし
+  bgm_volume: 0.12
+
+youtube:
+  client_secrets: "credentials/client_secret.json"
+  token_file: "credentials/token.json"
+  category_id: "27"           # 27 = Education
+  privacy: "private"          # publishAt を使うため一旦 private → 指定時刻に自動公開
+  made_for_kids: false
+
+paths:
+  topics_db: "data/topics.json"
+  history_log: "data/history.jsonl"
+  output_dir: "output"
